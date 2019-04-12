@@ -1,0 +1,2492 @@
+/* ----- COLORS ----- */
+/* --- NON ACTUAL --- */
+$blue3:       #17ffe6;
+$yellow:      #f7b204;
+$yellow2:     #f8ca01;
+$yellow3:     #f5a208;
+$grey3:       #999999;
+$violet:      #343d6a;
+$red:         #e31e25;
+
+/* --- NON ACTUAL --- */
+
+$orange:      #e31e25;
+$black:       #2b2a28;
+$black2:      #111111;
+$grey:        #F7F7F7;
+$grey2:       #333333;
+$purple:      #2C001E;
+$green:       #0E8420;
+$blue:        #007AA6;
+$blue2:       #326CE5;
+$pink:        #DA2643;
+$white:       #ffffff;
+
+$shadow:      0 0 20px 5px rgba(0, 0, 0, 0.1)
+$shadow-hover:      0 0 10px 0 rgba(0, 0, 0, 0.1)
+
+/* responsive */
+$small-desktop:         "1200px";
+$tablets:               "991px";
+$small-tablets:         "768px";
+$big-phones:            "600px";
+$phones:                "400px";
+$small-phones:          "357px";
+
+/* ----- FONTS ----- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic')
+
+$font-stack:       'Open Sans', sans-serif;
+$font-awesome:     "Font Awesome 5 Free";
+
+
+/* ----- BASIS ----- */
+
+body
+    background-color: #fff
+    font-family: $font-stack
+    
+    &.noscroll
+        overflow: hidden
+        
+    &.inner header
+        position: relative
+        top: 35px
+
+.clearlist, 
+.clearlist li
+    list-style: none
+    padding: 0
+    margin: 0
+    background: none
+        
+.hidden
+    display: none
+
+.inliner
+    display: block
+    font-size: 0
+    
+    &>*
+        display: inline-block
+        float: none
+    
+    &.vam>*
+        vertical-align: middle
+        
+.pull-right
+    float: right
+        
+.posst
+    position: static
+
+h1
+    position: relative
+    text-transform: uppercase
+    padding-bottom: 20px
+    font-weight: bold
+    font-size: 30px
+
+h2
+    position: relative
+    text-transform: uppercase
+    padding-bottom: 20px
+    font-weight: bold
+    font-size: 28px
+
+h3
+    position: relative
+    text-transform: uppercase
+    padding: 20px 0 10px
+    font-weight: bold
+    font-size: 24px
+
+h4
+    position: relative
+    text-transform: uppercase
+    padding: 20px 0 10px
+    font-weight: bold
+    font-size: 20px
+        
+a
+    color: $orange
+    transition: all .2s ease
+    
+    &:hover
+        color: $black
+        transition: all .2s ease
+        text-decoration: none
+    
+.btn-primary
+    background: $orange
+    border: 2px solid $orange
+    border-radius: 5px
+    padding: 7px 25px
+    font-family: $font-stack
+    text-transform: uppercase
+    font-weight: bold
+    color: #fff
+    transition: all .2s ease
+    
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active
+        background-color: #b91319
+        border-color: #b91319
+        color: #fff
+        transition: all .2s ease
+    
+    &:hover,
+    &:active
+        background-color: #b91319
+        border-color: #b91319
+        color: #fff
+        transition: all .2s ease
+    
+    &:focus
+        background: $orange
+        border-color: $orange
+        color: #fff
+        box-shadow: none
+
+.btn-black
+    background: $black
+    border: 2px solid $black
+    border-radius: 5px
+    padding: 7px 25px
+    font-family: $font-stack
+    text-transform: uppercase
+    font-weight: bold
+    color: #ffffff
+    transition: all .2s ease
+    
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active
+        background-color: $black
+        border-color: $black
+        color: #fff
+        transition: all .2s ease
+    
+    &:hover,
+    &:active
+        background-color: #eabc01
+        border-color: #eabc01
+        color: $black
+        transition: all .2s ease
+    
+    &:focus
+        background: $orange
+        border-color: $orange
+        color: $black
+        box-shadow: none
+    
+.btn-white-light
+    background: #fff
+    border: 1px solid $white
+    color: $black
+    border-radius: 0
+    padding: 7px 25px
+    border: 2px solid $white
+    transition: all .2s ease
+    font-weight: 600
+    padding: 7px 25px
+    transition: all .2s ease
+    
+    &:hover,
+    &:focus
+        background: transparent
+        border-radius: 0
+        color: $white
+        transition: all .2s ease
+    
+.btn-white-b
+    background: transparent
+    color: $white
+    border-radius: 0
+    font-weight: 500
+    padding: 7px 25px
+    border: 2px solid $white
+    transition: all .2s ease
+    
+    &:hover,
+    &:focus
+        background: $white
+        color: $black
+        transition: all .2s ease
+    
+.btn-more
+    display: block
+    width: 100% !important
+
+.icon
+    display: inline-block
+    
+.mobile
+    display: none !important
+        
+.desktop
+    display: block !important
+    
+.wrapper
+    position: relative
+    
+.form-control
+    border-radius: 0
+    
+img
+    max-width: 100%
+
+blockquote
+    padding-left: 30px
+    border-left: 1px solid $orange
+    
+.mv-30
+    margin-top: 30px
+    margin-bottom: 30px
+    
+.mb-30
+    margin-bottom: 30px
+    
+.nopadding
+    padding: 0
+    
+.posr
+    position: relative
+    
+button,
+button:active,
+button:focus, 
+button:hover,
+.btn,
+.btn:active, 
+.btn:focus, 
+.btn:hover
+    outline:none !important
+        
+.badge-success
+    background: $green
+    font-weight: 500
+    
+.visible-xs
+    display: none
+    
+.sticky, 
+.sticky.head-tr
+    animation: 600ms ease-in-out 0s normal none 1 running fadeInDown
+    left: 0
+    margin: auto
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 998
+    transition: all .5s ease
+    background: rgba(0,0,0,.4)
+    
+.btn-link
+    color: $orange
+    
+    &:hover
+        color: $black
+    
+.card-header
+    background: $grey
+    
+/* ----- PRELOADER ----- */
+.preloader-inner
+    background-color: #fff
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 9999
+    display: flex;
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.spinner
+    width: 40px
+    height: 40px
+    margin: 100px auto
+    background-color: $orange
+    border-radius: 100%
+    animation: sk-scaleout 1.0s infinite ease-in-out
+
+@-webkit-keyframes sk-scaleout
+    0%
+        -weblit-transform: scale(0)
+    100%
+        -weblit-transform: scale(1)
+        opacity: 0
+
+@keyframes sk-scaleout
+    0%
+        transform: scale(0)
+    100%
+        transform: scale(1)
+        opacity: 0
+    
+/* ----- HEADER ----- */
+
+.navbar-toggler
+    position: relative
+    background: transparent
+    border: none
+    display: none
+    float: right
+    padding: 10px 12px
+    
+    & span
+        display: block
+        background-color: #fff
+        height: 3px
+        width: 25px
+        margin-top: 4px
+        margin-bottom: 4px
+        transform: rotate(0deg)
+        position: relative
+        left: 0
+        opacity: 1
+
+        &:nth-child(1),
+        &:nth-child(3)
+            transition: transform .35s ease-in-out
+
+    &:not(.noactive) span:nth-child(1)
+        position: absolute
+        left: 12px
+        top: 15px
+        transform: rotate(135deg)
+        opacity: 0.9
+
+    &:not(.noactive) span:nth-child(2)
+        height: 12px
+        visibility: hidden
+        background-color: transparent
+
+    &:not(.noactive) span:nth-child(3)
+        position: absolute
+        left: 12px
+        top: 15px
+        transform: rotate(-135deg)
+        opacity: 0.9
+    
+    .navbar-toggler-icon
+        display: inline-block
+        width: 1.5em
+        height: 1.5em
+        vertical-align: middle
+        content: ""
+        background: no-repeat center center
+        background-size: 100% 100%
+        
+.side-menu-overlay
+    height: 100%
+    width: 0
+    position: fixed
+    z-index: 998
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,.7)
+    overflow-y: auto
+    overflow-x: hidden
+    text-align: center
+    opacity: 0
+    transition: opacity 1s
+    
+    &.active
+        opacity: 1
+        width: 100%
+        
+.navigation
+    position: relative
+    background: $black
+        
+    .navbar-dart
+        position: relative
+        
+        & ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+            
+            & li
+                display: inline-block
+                
+                &.parent
+                    position: relative
+                    
+                    &>a
+                        padding-right: 20px
+                    
+                    &>a::after
+                        display: inline-block
+                        position: absolute
+                        right: 5px
+                        top: 11px
+                        content: "\f107"
+                        font-family: "Font Awesome 5 Free"
+                        font-weight: 900
+                    
+                    &:hover ul,
+                    &.active ul
+                        display: block
+                    
+                    & ul
+                        display: none
+                        position: absolute
+                        top: 100%
+                        left: 0
+                        z-index: 1000
+                        background: $black
+                        
+                        & li
+                            display: block
+                            
+                            & a
+                                display: block
+                                white-space: nowrap
+                
+                & a
+                    font-size: 16px
+                    font-weight: 600
+                    color: #fff
+                    display: block
+                    position: relative
+                    padding: 10px 15px
+                    transition: all .2s ease
+                    text-transform: uppercase
+                    
+                    &:hover
+                        background: #1b1a19
+                        color: #fff
+                        transition: all .2s ease
+        
+header
+    background: transparent
+    padding: 15px 0
+    
+    .logo
+        position: relative
+        
+        & img
+            max-width: 150px
+            width: 100%
+        
+        & .desc
+            font-size: 16px
+            text-transform: uppercase
+            font-weight: bold
+            margin-left: 15px
+            
+.contacts
+    position: relative
+    padding: 10px 0
+    text-align: right
+    
+    & .item
+        display: inline-block
+        position: relative
+
+        & .icon
+            display: inline-block
+            position: absolute
+            left: 0
+            top: 3px
+
+        & .text
+            padding-left: 40px
+
+        & .phone i
+            font-size: 20px
+            color: $black
+            text-align: center
+            line-height: 30px
+
+        & a
+            font-size: 20px
+            font-weight: bold
+            display: block
+            line-height: 1
+            color: $black
+
+            &:hover
+                text-decoration: underline
+
+        & .desc
+            font-size: 12px
+            color: $black
+            font-weight: normal
+
+    & .socials
+        position: relative
+        margin-left: 20px
+
+        & ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+
+            & li
+                display: inline-block
+
+                & + li
+                    margin-left: 5px
+
+                & a
+                    color: $black
+                    font-size: 18px
+
+                    &:hover i
+                        background: $orange
+                        transition: all .2s ease
+
+                    & i
+                        width: 30px
+                        height: 30px
+                        color: #fff
+                        display: inline-block
+                        background: $black
+                        line-height: 30px
+                        text-align: center
+                        border-radius: 50%
+                        transition: all .2s ease
+                            
+.title-block
+    padding: 0
+    position: relative
+    
+    .bouncher
+        position: absolute
+        bottom: 20px
+        left: 0
+        right: 0
+        text-align: center
+        z-index: 9
+    
+        .bouncing-icon
+            border: 2px solid #fff
+            height: 28px
+            display: inline-block
+            width: 23px
+            border-radius: 11px
+            color: #B9B4B4
+            transition: all 1s ease 0s
+            margin-top: 8px
+            animation: 3s ease 0s normal none infinite running bounce
+
+            &:hover
+                color: $orange         
+    
+    & .main-slider
+        position: relative
+        
+        & .item
+            position: relative
+            min-height: 80vh
+            background-size: cover !important
+            background-position: center center !important
+            
+            &::before
+                content: ''
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                background: rgba(0, 0, 0, 0.5)
+                z-index: 99
+            
+    & .caption
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        z-index: 9
+        display: flex
+        align-items: center
+        justify-content: center
+        
+        .first-screen-form
+            max-width: 600px
+            margin: 30px auto
+            
+            & button
+                margin-top: 15px
+            & input
+                background: transparent
+                border-top: none
+                border-left: none
+                border-right: none
+                border-bottom: 2px solid #fff
+                display: block
+                width: 100%
+                padding: 5px 10px
+                color: #fff
+                
+                &::-webkit-input-placeholder
+                    color: #fff
+                
+                &:-ms-input-placeholder
+                    color: #fff
+                
+                &::-ms-input-placeholder
+                    color: #fff
+                
+                &::placeholder 
+                    color: #fff
+                
+                &:focus
+                    outline: none
+    
+        & h1
+            font-size: 36px
+            color: #fff
+            font-weight: bold
+            z-index: 9
+            text-align: center
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1)
+            position: relative
+            z-index: 2
+
+
+.products-list
+    padding: 80px 0 60px
+
+
+    .item
+        border: 1px solid #e6f0fa
+        margin: 0 0 30px
+        background: #ffffff
+        box-shadow: 0 0 10px #e6f0fa
+        padding: 40px 0 140px
+
+        h4
+            font-weight: 600
+            margin: 0
+
+        & .price-block
+            position: absolute
+            bottom: 60px
+            left: 0
+            right: 0
+            text-align: center
+
+            & .prices
+                position: relative
+                padding-bottom: 20px
+
+                & > *
+                    display: inline-block
+
+                & .old-price
+                    font-size: 14px
+                    text-decoration: line-through
+                    color: $black
+
+                & .price
+                    font-size: 18px
+                    color: $black
+                    font-weight: bold
+
+.video-gallery
+    position: relative
+    padding: 30px 0
+
+    & .item
+        margin-bottom: 30px
+
+        & a
+            display: block
+            position: relative
+
+            &::after
+                content: ''
+                width: 100%
+                height: 100%
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                background: rgba(0,0,0,.2)
+                z-index: 1
+
+            &::before
+                content: "\f0a1"
+                font-family: 'IcoFont'
+                display: block
+                text-align: center
+                line-height: 70px
+                font-size: 30px
+                padding-left: 5px
+                border-radius: 50%
+                height: 70px
+                width: 70px
+                background: $black
+                color: #fff
+                position: absolute
+                top: 50%
+                left: 50%
+                margin-left: -40px
+                margin-top: -35px
+                z-index: 2
+
+                            
+.about
+    position: relative
+    
+    & .centered
+        position: relative
+        text-align: center
+        margin-top: 20px
+        
+        & .name
+            font-weight: bold
+            font-size: 16px
+            display: block
+            margin-top: 20px
+    
+    & .plus
+        font-size: 18px
+        display: inline-block
+        padding: 15px 15px
+        
+        &.bor-l
+            text-align: left
+            border-left: 2px solid $orange
+            
+        &.bor-r
+            text-align: right
+            float: right
+            border-right: 2px solid $orange
+            
+.def-slider-wrap
+    padding: 30px 30px
+                    
+.def-slider
+    position: relative
+    
+    & .owl-prev,
+    & .owl-next
+        color: $black
+        width: 40px
+        height: 40px
+        font-size: 24px
+        line-height: 40px
+        text-align: center
+        background: $orange
+        border-radius: 50%
+        transition: all .2s ease
+        position: absolute
+        top: 50%
+        margin-top: -20px
+        
+        &:hover
+            color: #fff
+            background: $black
+            transition: all .2s ease
+        
+    & .owl-prev
+        left: -20px
+        
+    & .owl-next
+        right: -20px
+                
+.works-slider
+    position: relative
+    
+    & .owl-prev,
+    & .owl-next
+        margin-top: 0
+    
+    & .item
+        position: relative
+        
+        & .desc
+            text-align: center
+            margin-bottom: 15px
+            
+            & span
+                display: block
+                font-weight: 100
+                font-size: 20px
+    
+.def-section
+    padding: 60px 0
+    overflow: hidden
+    
+    &.grey
+        background: #fafafa
+        border-top: 1px solid #ccc
+        border-bottom: 1px solid #ccc
+    
+    & h2
+        text-align: center
+        font-family: $font-stack
+        position: relative
+        text-transform: uppercase
+        padding-bottom: 20px
+        font-weight: bold
+        
+        &::before
+            content: ''
+            position: absolute
+            bottom: 10px
+            left: 50%
+            margin-left: -35px
+            width: 70px
+            height: 2px
+            background: $black
+        
+    & .desc
+        max-width: 800px
+        margin: 0 auto
+        text-align: center
+        
+.interiers
+    margin-top: 40px
+    
+    & .item
+        position: relative
+        text-align: center
+        
+        & .icon
+            margin-bottom: 15px
+            
+            & .img
+                width: 150px
+                height: 150px
+                border: 2px solid $orange
+                border-radius: 50%
+                background-size: cover !important
+                background-position: center center
+                display: inline-block
+                
+        & .text
+            position: relative
+            
+            & .title
+                font-size: 14px
+                font-weight: bold
+                text-transform: uppercase
+                
+.form-block
+    position: relative
+    background: $black
+    padding: 30px 0
+    
+    & button
+        white-space: normal
+        
+    & input
+        background: transparent
+        border-top: none
+        border-left: none
+        border-right: none
+        border-bottom: 2px solid #fff
+        display: block
+        width: 100%
+        padding: 5px 10px
+        color: #fff
+
+        &::-webkit-input-placeholder
+            color: #fff
+
+        &:-ms-input-placeholder
+            color: #fff
+
+        &::-ms-input-placeholder
+            color: #fff
+
+        &::placeholder 
+            color: #fff
+
+        &:focus
+            outline: none
+        
+.cols
+    margin: 30px 0
+    
+    & .item
+        position: relative
+        margin-bottom: 30px
+        
+        & .image
+            text-align: center
+        
+        & .text
+            margin-top: 15px
+            font-size: 14px
+            
+            & h3
+                font-weight: bold
+                font-size: 20px
+                text-align: center
+                
+.portfolio
+    position: relative
+    
+    & .items
+        position: relative
+        
+        &>.item
+            margin: 30px 0
+            padding: 0 30px
+            
+            & h3
+                font-weight: bold
+                font-size: 24px
+                text-align: center
+                
+            & .item-slider
+                margin-top: 30px
+                
+                & .item
+                    position: relative    
+                    
+                    & .text
+                        margin-top: 15px
+                        
+                        & .text-item
+                            position: relative
+                            
+                            & + .text-item
+                                margin-top: 10px
+                            
+                            & .title
+                                font-weight: bold
+                                text-transform: uppercase
+                                
+                            & .value
+                                font-size: 14px
+                    
+.reviews
+    position: relative
+    
+    .items
+        margin-top: 30px
+        
+        & .item
+            position: relative
+            
+            & .image
+                text-align: center
+                
+                & img
+                    max-width: 200px
+                    display: inline-block
+                    border-radius: 50%
+                    
+            & .text
+                margin-top: 30px
+                
+                & .name
+                    font-weight: bold
+                    font-size: 18px
+                    text-align: center
+                    display: block
+                    margin-bottom: 10px
+                    
+                & p
+                    font-size: 14px
+                    margin: 0 auto
+                    max-width: 300px
+                    
+.accordeon
+    position: relative
+    margin-top: 30px
+    
+    & .card
+        position: relative
+        
+        & + .card
+            margin-top: 15px
+        
+        & .card-header
+            padding: 10px 15px
+            
+            & button
+                display: block
+                font-weight: bold
+                text-transform: uppercase
+                color: $black
+                white-space: normal
+                
+                &:hover,
+                &:active,
+                &:focus
+                    text-decoration: none
+                    color: $orange
+                
+.services-list
+    padding: 30px 0
+        
+    .service-box
+        padding: 40px 20px
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        background: #ffffff
+        margin-bottom: 30px
+        border-bottom: 2px solid $orange
+        transition: all 0.2s ease-in-out
+        
+        &:hover
+            box-shadow: 1px 1px 14px 0 rgba(0,0,0,0.15)
+            transform: translateY(-10px)
+            transition: all 0.1s ease-in-out
+        
+            .line
+                width: 100px
+                transition: all 0.1s ease-in-out
+
+        .service-icon
+            padding: 0
+            margin: 0
+            font-size: 40px
+            text-align: center
+            color: $orange
+            
+        .line
+            background: $orange
+            width: 40px
+            height: 1px
+            transition: all 0.1s ease-in-out
+
+        & p
+            margin-top: 15px
+            text-align: center
+            color: $black
+
+        & h4
+            color: $black
+            text-align: center
+            font-size: 20px
+            font-weight: 400
+            margin-top: 20px
+            
+ul.checked
+    list-style-type: none
+    padding: 0
+    margin: 0 0 15px
+    
+    & li
+        padding-left: 25px
+        position: relative
+        
+        & + li
+            margin-top: 5px
+        
+        &::before
+            content: '\f00c'
+            font-family: "Font Awesome 5 Free"
+            font-weight: bold
+            color: $orange
+            font-size: 16px
+            position: absolute
+            left: 0
+            
+.simple-half-block
+    margin-top: 30px
+                
+.instagram
+    position: relative
+    
+    & .items
+        position: relative
+        max-width: 1020px
+        margin: 30px auto 0
+        
+        & .item
+            text-align: center
+            margin-bottom: 30px
+        
+a#scrollUp
+    background: $black
+    bottom: 30px
+    color: $white
+    font-size: 30px
+    font-weight: 600
+    height: 40px
+    width: 40px
+    line-height: 35px
+    text-align: center
+    position: fixed
+    right:  20px
+    text-align: center
+    text-transform: uppercase
+    z-index: 999
+    display: none
+    transition: all .3s ease
+        
+    &:hover
+        background: $orange
+    
+.reasons
+    position: relative
+    font-size: 0
+    text-align: center
+    margin-top: 30px
+    
+    & .item
+        width: 20%
+        display: inline-block
+        text-align: left
+        padding: 0 15px
+        vertical-align: top
+        
+        & .image
+            text-align: center
+            margin-bottom: 15px
+            
+            & img
+                max-height: 100px
+            
+        & .text
+            position: relative
+            
+            & .title
+                font-size: 16px
+                font-weight: bold
+                text-transform: uppercase
+                margin-bottom: 10px
+                display: block
+                
+            & p
+                font-size: 14px
+                
+.prices
+    position: relative
+    margin-top: 30px
+    
+    & .item
+        position: relative
+        
+        & .images
+            text-align: center
+            
+            & img
+                display: inline-block
+            
+        & .text
+            position: relative
+            
+            & .prices-wrap
+                background: #f1f1f1
+                padding: 15px 15px
+                margin: 15px 0
+                
+                & .bigger
+                    font-weight: bold
+                    text-align: center
+                    display: block
+                    padding: 31px 0
+            
+            & .prices
+                position: relative
+                margin: 10px 0
+                max-width: 350px
+                margin: 0 auto
+                
+            & .item
+                position: relative
+                padding: 3px 0
+                
+                &::after
+                    content: ''
+                    height: 1px
+                    border-bottom: 1px dotted $orange
+                    display: block
+                    bottom: 8px
+                    position: absolute
+                    left: 0
+                    width: 100%
+                    z-index: 1
+                
+                & .label
+                    font-size: 16px
+                    color: $black
+                    width: 60%
+                    
+                    & span
+                        display: inline-block
+                        background: #f1f1f1
+                        padding-right: 5px
+                        position: relative
+                        z-index: 2
+                        
+                & .value
+                    font-size: 16px
+                    color: $black
+                    font-weight: bold
+                    width: 40%
+                    text-align: right
+                    
+                    & span
+                        display: inline-block
+                        background: #f1f1f1
+                        padding-left: 5px
+                        position: relative
+                        z-index: 2
+    
+footer
+    background: $black
+    padding: 30px 0 0
+
+    .footer-block
+        margin-bottom: 30px
+    
+    .footer-bottom
+        padding: 15px 0
+        margin-top: 30px
+        background: $black
+        
+        & p
+            color: #fff
+            text-align: right
+            font-size: 12px
+            margin-bottom: 0
+            
+        .ftr_social_icon
+            position: relative
+            
+            ul
+                list-style-type: none
+                padding: 0
+                margin: 0
+                
+                li
+                    display: inline-block
+                    text-align: center
+                    padding: 4px
+
+
+                    a
+                        color: #fff
+                        display: inline-block
+                        font-size: 17px
+                        padding: 4px 8px
+                        transition: all .5s ease
+
+                        &:hover
+                            color: $red
+    
+    .sf_title
+        color: #fff
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 17px
+        margin-top: 0px
+        margin-bottom: 20px
+
+    .newsletter_form
+        margin-top: 0px
+        overflow: hidden
+        
+        & p
+            font-size: 14px
+            color: #979797
+        
+        & form
+            position: relative
+            display: block
+
+        & .form-control
+            height: 50px
+            line-height: 50px
+            margin: 0
+            padding: 8px 20px
+            width: 100%
+            position: relative
+            background: transparent
+            color: #fff
+            border-radius: 0
+
+        & button
+            border: inherit
+            border-radius: 0
+            background: transparent
+            color: #fff
+            text-transform: uppercase
+            box-shadow: none
+            border: 1px solid transparent
+            transition: 0.5s
+            letter-spacing: 0.5px
+            position: absolute
+            right: 0px
+            top: 0
+            padding: 14px 17px
+            transition: .5s
+                
+            &:hover
+                background: transparent
+                color: #fff
+                opacity: .9
+                
+        & ::-webkit-input-placeholder
+            color: #fff
+            opacity: 1
+
+        & ::-moz-placeholder
+            color: #fff
+            opacity: 1
+
+        & :-ms-input-placeholder
+            color: #fff
+            opacity: 1
+
+        & :-moz-placeholder
+            color: #fff
+            opacity: 1
+        
+    & ul
+        list-style-type: none
+        padding: 0
+        margin: 0
+            
+        li
+            padding-bottom: 7px
+            color: #979797
+                
+            & a
+                color: #979797
+                transition: all .2s ease
+
+                &:hover
+                    text-decoration: underline
+                    color: #d1d1d1
+                    transition: all .2s ease
+                
+.modal-backdrop
+    background: rgba(0,0,0,.8)
+
+.content
+    position: relative
+    padding: 50px 0
+
+.blog-item
+    margin-bottom: 80px
+    position: relative
+
+    .blog-item-date
+        width: 100px
+        padding: 10px
+        position: absolute
+        top: 0px
+        left: -130px
+        font-size: 12px
+        font-weight: 300
+        letter-spacing: 1px
+        line-height: 1.2
+        text-transform: uppercase
+        text-align: center
+        color: #999
+        border-right: 1px solid #eee
+
+    .date-num
+        display: block
+        margin-bottom: 3px
+        font-size: 18px
+        font-weight: 400
+        color: #555
+
+    .blog-media
+        margin-bottom: 30px
+    
+    .blog-media img,
+    .blog-media .video,
+    .blog-media iframe
+        width: 100%
+
+    .blog-item-title
+        margin: 0 0 .5em 0
+        padding: 0
+        font-size: 24px
+        font-weight: 600
+        text-transform: uppercase
+
+        & a
+            color: $black
+            text-decoration: none
+        
+            &:hover
+                color: $orange
+                text-decoration: none
+    
+    .blog-item-data
+        margin-bottom: 15px
+        text-transform: uppercase
+        font-size: 11px
+        letter-spacing: 1px
+        color: #aaa
+    
+    .separator
+        margin: 0 5px
+
+    .blog-item-data a
+        color: #aaa
+        text-decoration: none
+        transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000)
+    
+        &:hover
+            color: #000
+            text-decoration: none
+
+    .blog-post-data
+        margin-top: 10px
+        text-transform: uppercase
+        font-size: 11px
+        letter-spacing: 1px
+        color: #aaa
+
+    .blog-item-body
+        font-size: 16px
+        font-weight: 300
+        color: $black
+        line-height: 1.8
+    
+        & h1,
+        & h2,
+        & h3,
+        & h4,
+        & h5,
+        & h6
+            margin: 0 0 0.5em 0
+            font-weight: bold
+
+    .blog-item-more
+        border: 1px solid #eaeaea
+        padding: 5px 10px
+        font-size: 12px
+        font-weight: 400
+        text-transform: uppercase
+        color: #777
+        letter-spacing: 1px
+        transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000)
+    
+        &:hover
+            text-decoration: none;
+            border-color: #111;
+    
+    a.blog-item-more
+        color: #777
+        text-decoration: none
+    
+        &:hover
+            color: #111
+
+.sidebar
+    position: relative
+
+    & .widget
+        margin-bottom: 60px
+
+    & .img-left
+        margin: 0 10px 10px 0
+
+    & .img-right
+        margin: 0 0 10px 10px
+
+    & .widget-title
+        margin-bottom: 20px
+        padding-bottom: 5px
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 400
+        color: #777
+        border-bottom: 1px solid #ccc
+    
+    & .widget-body
+        font-size: 13px
+        color: #777
+
+    & .widget-text
+        line-height: 1.7
+
+    & .search-wrap
+        position: relative
+        width: 100%
+
+        .search-field
+            width: 100% !important
+            height: 40px !important
+            box-sizing: border-box
+
+        .search-button
+            width: 42px
+            height: 40px
+            line-height: 38px
+            margin-top: -20px
+            position: absolute
+            top: 50%
+            right: 1px
+            overflow: hidden
+            background: transparent
+            border: none
+            outline: none
+            color: #999
+            font-size: 14px
+
+            &:hover
+                color: $black
+
+                & + .search-field
+                    border-color: #ccc
+
+    .widget-menu
+        font-size: 13px
+
+        & li
+            padding: 5px 0    
+
+            & a
+                color: #555
+                text-decoration: none
+                padding-bottom: 2px
+                text-decoration: none
+                border-bottom: 1px solid transparent
+                transition: all 0.17s cubic-bezier(0.000, 0.000, 0.580, 1.000)
+
+                &:hover,
+                &.active
+                    color: #999
+
+            & small
+                font-size: 11px
+                color: #aaa
+
+    .widget-posts
+        color: #aaa
+
+    .widget-posts li
+        font-size: 12px
+        padding: 12px 0
+        border-bottom: 1px dotted #eaeaea
+
+        & a
+            font-size: 13px
+            display: block
+            color: #555
+            text-decoration: none
+            transition: all 0.17s cubic-bezier(0.000, 0.000, 0.580, 1.000)
+
+            &:hover
+                color: #999
+
+    .widget-posts-img
+        float: left
+        margin: 0 7px 0 0
+
+    .widget-posts-descr
+        overflow: hidden
+
+.breadcrumb
+    margin-bottom: 50px
+    padding: 5px 15px
+
+
+.contact-info
+    position: relative
+    
+    & .media-list
+        margin-bottom: 30px
+        
+        & .media
+            position: relative
+            margin-bottom: 15px
+            
+            & .fa
+                padding: 0
+                width: 40px
+                height: 40px
+                font-size: 16px
+                line-height: 40px
+                border-radius: 20px
+                margin-right: 15px
+                text-align: center
+                background-color: #d3d3d3
+                color: #ffffff
+                min-width: 18px
+                    text-align: center
+                
+            & .media-body
+                line-height: 22px
+                
+.map
+    width: 100%
+    height: 450px
+    margin-top: 30px
+
+.one-click,
+.compare
+    color: $orange
+    display: block
+    font-size: 14px
+    transition: all .2s ease
+
+    &:hover
+        transition: all .2s ease
+        color: $orange
+
+        & span
+            border-bottom: 1px dashed transparent
+            transition: all .2s ease
+
+    & span
+        border-bottom: 1px dashed $orange
+        transition: all .2s ease
+        
+.bigger
+    position: relative
+
+    & .vendor
+        max-height: 20px
+        position: absolute
+        bottom: 15px
+        left: 15px
+        z-index: 10
+
+.avaibles
+    display: block
+    
+    &.instock
+        color: $green
+        font-size: 14px
+        
+        &::before
+            content: ''
+            width: 7px
+            height: 7px
+            border-radius: 50%
+            display: inline-block
+            background: $green
+            margin-bottom: 1px
+            margin-right: 5px
+    
+    &.outstock
+        color: $red
+        font-size: 14px
+        
+        &::before
+            content: ''
+            width: 7px
+            height: 7px
+            border-radius: 50%
+            display: inline-block
+            background: $red
+            margin-bottom: 1px
+            margin-right: 5px
+                
+.products
+    position: relative
+    margin: 30px 0
+    
+    & .item
+        background: $white
+        border: 1px solid transparent
+        box-shadow: 0 0 27px 4px rgba(0,0,0,0.16)
+        margin-bottom: 30px
+        position: relative
+        transition: all .2s ease
+        
+        &:hover
+            border: 1px solid $orange
+            box-shadow: none
+            transition: all .2s ease
+        
+        & .text
+            padding: 15px 15px 120px
+            
+            & .prices-block
+                position: absolute
+                bottom: 15px
+                left: 15px 
+                right: 15px
+            
+            & .category
+                font-size: 14px
+                color: #838383
+                display: block
+                
+            & a.title
+                font-size: 16px
+                color: #000
+                font-weight: bold
+                display: block
+                transition: all .2s ease
+                
+                &:hover
+                    color: $orange
+                    transition: all .2s ease
+                
+            & form
+                text-align: center
+                padding: 15px 0 10px
+                
+                & .btn
+                    font-size: 14px 
+                    color: $white
+                    font-weight: bold
+                    display: block
+                    width: 100%
+                    margin-bottom: 5px
+                    
+                & .one-click
+                    color: $orange
+                    display: block
+                    font-size: 14px
+                    transition: all .2s ease
+                    
+                    &:hover
+                        transition: all .2s ease
+                    
+                        & span
+                            border-bottom: 1px dashed $orange
+                            transition: all .2s ease
+                    
+                    & span
+                        border-bottom: 1px dashed $orange
+                        transition: all .2s ease
+                
+            & .prices
+                position: relative
+                text-align: center
+                
+                & .old_price
+                    font-size: 14px
+                    text-decoration: line-through
+                    color: #838383
+                    display: inline-block
+                    
+                & .price
+                    color: $orange
+                    font-size: 20px
+                    font-weight: bold
+                    display: inline-block
+                
+            & .characters
+                position: relative
+                padding: 10px 0
+                
+                & .char-item
+                    position: relative
+                    font-size: 14px
+                    text-align: justify
+                    margin-bottom: -16px
+                    
+                    &::before
+                        content: ''
+                        display: block
+                        width: 100%
+                        height: 0
+
+                    &::after
+                        width: 100%
+                        height: 0
+                        visibility: hidden
+                        overflow: hidden
+                        content: ''
+                        display: inline-block
+                        
+                    
+                    & .label
+                        color: #464b52
+                        display: inline-block
+                    
+                    & .value
+                        color: $black
+                        display: inline-block
+                
+            & .features
+                position: relative
+                padding: 10px 0
+                border-bottom: 1px solid #e8e8e8
+                font-size: 0
+                
+                & .feature-item
+                    width: 30%
+                    display: inline-block
+                    
+                    &:first-child
+                        width: 40%
+                    
+                    &:nth-child(2)
+                        text-align: center
+                    
+                    & i,
+                    & .iconms
+                        font-size: 20px
+                        color: $orange
+                        display: inline-block
+                        margin-right: 5px
+                        vertical-align: middle
+                        
+                    & .iconms
+                        font-weight: bold
+                        font-size: 16px
+                        
+                    & span
+                        color: #464b52
+                        display: inline-block
+                        font-size: 12px
+                        vertical-align: middle
+        
+        & .image
+            position: relative
+            text-align: center
+            
+            & a
+                display: block
+                max-height: 155px
+                line-height: 155px
+                
+                & img
+                    max-height: 155px
+                    
+            & .bigger
+                padding-bottom: 15px
+                
+                & .vendor
+                    bottom: 0
+            
+            & .labels
+                position: absolute
+                text-align: left
+                top: 10px
+                left: 10px
+                z-index: 10
+                
+                & > div + div
+                    margin-top: 5px
+                
+                & .labels-hits
+                    color: $white
+                    background: $orange
+                    font-size: 10px
+                    text-transform: uppercase
+                    padding: 3px 5px
+                    display: inline-block
+                    
+                & .labels-action
+                    color: $white
+                    background: $green
+                    font-size: 10px
+                    text-transform: uppercase
+                    padding: 3px 5px
+                    display: inline-block
+                    
+                & .labels-new
+                    color: $white
+                    background: $blue
+                    font-size: 10px
+                    text-transform: uppercase
+                    padding: 3px 5px
+                    display: inline-block
+
+.product-details
+    position: relative
+    
+    & h1
+        text-align: left
+        font-weight: bold
+        background: transparent
+        font-size: 24px
+        color: #444
+        
+        &::after
+            display: none
+    
+    & .product-gallery
+        position: relative
+        
+        & .big-gallery
+            position: relative
+            border-top: 1px solid #f7f7f7
+            border-left: 1px solid #f7f7f7
+            border-right: 1px solid #f7f7f7
+            
+            & .item
+                max-height: 330px
+                text-align: center
+                line-height: 310px
+                padding: 10px 10px
+                
+                & img
+                    display: inline-block
+                    max-height: 310px
+                    width: auto
+                
+            
+            & .owl-prev,
+            & .owl-next
+                position: absolute
+                top: 50%
+                margin-top: -15px
+                color: #d1d1d1
+                font-size: 20px
+                
+                &:hover
+                    color: $orange
+                
+            & .owl-prev
+                left: 5px
+                
+            & .owl-next
+                right: 5px
+                
+        & .small-gallery
+            position: relative
+            border-top: 1px solid #f7f7f7
+            
+            & .owl-stage-outer
+                margin-right: -1px
+            
+            & .owl-item.current .item
+                border: 1px solid $orange
+            
+            & .item
+                max-height: 105px
+                text-align: center
+                line-height: 85px
+                padding: 10px 10px
+                border: 1px solid #f7f7f7
+                
+                & img
+                    display: inline-block
+                    max-height: 85px
+                    width: auto
+            
+            & .owl-prev,
+            & .owl-next
+                position: absolute
+                top: 50%
+                margin-top: -15px
+                color: #d1d1d1
+                font-size: 20px
+                
+                &:hover
+                    color: $orange
+                
+            & .owl-prev
+                left: 5px
+                
+            & .owl-next
+                right: 5px
+                
+    & .product-description
+        position: relative
+        padding: 15px 15px 15px 0
+        
+        & .addition-options
+            position: relative
+            
+            &>div + div
+                margin-top: 15px
+            
+            & .sub-title
+                font-weight: bold
+                display: block
+                margin: 0 0 10px
+                
+            & .product-color
+                position: relative
+                
+                & .border-pick
+                    border: 1px solid $black
+                    
+                & .colors
+                    position: relative
+                    overflow: hidden
+                    
+                    & .item
+                        position: relative
+                        display: inline-block
+                        
+                        & div
+                            position: relative
+                            
+                            & img
+                                border: none
+                                border: 1px solid $black
+                        
+                        & input
+                            position: absolute
+                            visibility: hidden
+                            
+                            &:checked + div::before
+                                font-family: $font-awesome
+                                content: "\f00c"
+                                font-weight: 900
+                                position: absolute
+                                line-height: 27px
+                                left: 0
+                                right: 0
+                                display: inline-block
+                                width: 25px
+                                text-align: center
+                                color: #fff
+                                
+            
+            & .product-size
+                width: 100%
+                display: inline-block
+                margin-bottom: 25px
+
+                & span
+                    padding: 6px 12px
+                    border-radius: 2px
+                    float: left
+                    background: #EFEFEF
+                    text-align: center
+                    margin-right: 10px
+                    margin-bottom: 7px
+                    font-size: 14px
+                    font-weight: 700
+                    cursor: pointer
+
+                    &.active
+                        background: #333 !important
+                        color: #fff
+        
+        & .features
+            position: relative
+            padding: 0 0 10px
+            font-size: 0
+
+            & .feature-item
+                width: 30%
+                display: inline-block
+                
+                &:nth-child(1)
+                    width: 40%
+
+                &:nth-child(2)
+                    text-align: center
+                
+                &:nth-child(3)
+                    text-align: right
+
+                & i,
+                & .iconms
+                    font-size: 30px
+                    color: $orange
+                    display: inline-block
+                    margin-right: 5px
+                    vertical-align: middle
+
+                & .iconms
+                    font-weight: bold
+                    font-size: 20px
+
+                & span
+                    color: #464b52
+                    display: inline-block
+                    font-size: 16px
+                    vertical-align: middle
+                    
+        & .characters
+            position: relative
+            margin: 10px 0
+            
+            & .item
+                position: relative
+                padding: 3px 0
+                
+                &::after
+                    content: ''
+                    height: 1px
+                    border-bottom: 1px dotted $black
+                    display: block
+                    bottom: 8px
+                    position: absolute
+                    left: 0
+                    width: 100%
+                    z-index: -1
+                
+                & .label
+                    font-size: 14px 
+                    color: $black
+                    width: 60%
+                    
+                    & span
+                        display: inline-block
+                        background: $white
+                        padding-right: 5px
+                    
+                & .value
+                    font-size: 14px 
+                    color: $black
+                    font-weight: bold
+                    width: 40%
+                    text-align: right
+                    
+                    & span
+                        display: inline-block
+                        background: $white
+                        padding-left: 5px
+                        
+                        & small
+                            font-weight: bold
+                            
+        & .offer-features
+            position: relative
+            
+            & .item
+                position: relative
+                
+                & span
+                    color: $black
+                    font-size: 14px
+                    
+        & .guarantee
+            padding: 10px 0
+            
+            & span
+                width: 50%
+                font-size: 14px
+                
+                &:nth-child(2)
+                    text-align: right
+                
+    & .description
+        padding: 30px 0
+        
+        & p
+            font-size: 14px
+            
+            
+    & .product-form
+        position: relative
+        margin: 20px 0
+        
+        & .buttons
+            padding: 15px 0
+            
+        & .compare
+            text-align: right
+        
+        & .price
+            text-align: right
+            font-weight: bold
+            font-size: 24px
+            color: $orange
+            
+            & i
+                font-size: 18px
+        
+        & input
+            margin: 0 2px
+            max-width: 50px
+            min-height: 48px
+            font-size: 18px
+            border: 0
+            text-align: center
+            
+        & .btn--count
+            width: 35px
+            height: 35px
+            font-size: 18px
+            text-align: center
+            font-weight: bold
+            border: 1px solid #f3f3f3
+            line-height: 18px
+            background: #FFF
+            color: $black
+            border-radius: 50%
+            transition: all .2s ease
+            
+            &:focus
+                outline: none
+                box-shadow: none
+            
+            &:hover
+                color: $white
+                background: $orange
+                border: 1px solid $orange
+                transition: all .2s ease
+    
+.table-middle td, 
+.table-middle th
+    vertical-align: middle
+
+.tab-content
+    padding: 30px 30px
+
+.table-dark
+    background: #fff
+
+    & thead th
+        vertical-align: middle
+        border-bottom: 4px solid #fff
+        background-color: #475965
+        color: $black
+        position: relative
+
+    & td, 
+    & th
+        border-top: 4px solid #fff
+        border-bottom: 4px solid #fff
+        border-left: 4px solid #fff
+        border-right: 4px solid #fff
+
+    & td
+        background-color: #ebeff1
+        font-size: 14px
+        padding: 8px 15px
+        color: $black
+
+.msMiniCart .empty
+    display: block !important
+
+.msMiniCart .not_empty
+    display: none !important
+
+.msMiniCart.full .empty
+    display: none !important
+
+.msMiniCart.full .not_empty
+    display: block !important
+
+a.btn_one_click
+    border-bottom: none !important
+    text-decoration: none
+
+.msoneclick_modal .forder-popup__goods
+    padding: 0 15px
+
+.msoneclick_modal .msoc_product_line
+    padding: 10px 0
+
+.msoneclick_modal .msoc_product_line_count
+    width: auto
+    top: 0
+
+.msoneclick_modal .modal-footer
+    display: block
+    
+    & .description
+        font-size: 12px
+        margin: 10px 0
+
+.msoc_product_line_image
+    position: static !important
+
+.msoc_product_line_pagetitle
+    margin-left: 0 !important
+
+    & h4
+        font-size: 14px
+
+.btn-more
+    width: auto !important
+    display: block
+    margin: auto
+
+.products-alt
+    margin: 30px 0
+
+    & .item
+        position: relative
+        margin-bottom: 30px
+
+        & .image
+            position: relative
+            margin-bottom: 15px
+
+            & img
+                margin: 0 auto
+                display: block
+
+        & .text
+            position: relative
+            text-align: center
+
+            & .title
+                display: block
+                font-size: 20px
+                font-weight: bold
+
+            & p.desc
+                font-size: 14px
+
+            & .prices
+                font-size: 16px
+                margin-top: 15px
+
+                & span
+                    font-size: 22px
+                    font-weight: bold
+
+
+@media (max-width: $small-desktop)
+    .contacts .socials
+        margin-top: 10px
+        
+    .navigation .navbar-dart ul li a
+        padding: 10px 10px
+        
+    .interiers .item .icon .img
+        width: 130px
+        height: 130px
+        
+    .reasons .item
+        width: 33.333333%
+        margin-bottom: 30px
+        
+@media (max-width: $tablets)    
+    header .logo img
+        max-width: 150px
+        
+    header .logo .desc
+        font-size: 14px
+        
+    .navigation .navbar-dart
+        overflow: hidden
+        
+    .navbar-toggler
+        display: inline-block
+        
+    .navigation .navbar-dart ul li.parent ul,
+    .navigation .navbar-dart ul li.parent:hover ul
+        position: static
+        border-top: 1px solid #fff
+        border-bottom: 1px solid #fff
+        padding-left: 10px
+        margin-top: 0
+        z-index: 1
+        display: none
+        
+    .navigation .navbar-dart ul li.parent.active ul,
+    .navigation .navbar-dart ul li.parent.active:hover ul
+        display: block 
+        
+    .navigation .navbar-dart ul li.parent span
+        display: block
+        position: absolute
+        z-index: 100
+        left: 0
+        right: 0
+        top: 0
+        height: 44px
+        cursor: pointer
+        
+    .navigation .navbar-dart ul
+        display: none
+        
+        &.active
+            display: block
+            margin-top: 35px
+        
+        & li
+            display: block
+            
+    footer .question_block .title
+        font-size: 18px
+        
+    footer .question_block a
+        font-size: 12px
+        
+    .about .plus
+        font-size: 12px
+        
+    .interiers .item
+        margin-bottom: 30px
+        
+@media (max-width: $small-tablets)        
+    header .logo
+        text-align: center
+        
+        & .desc
+            text-align: left
+            
+    .contacts
+        text-align: center
+        
+        & .socials
+            margin-top: 0
+            
+    .title-block .caption h1
+        font-size: 25px
+            
+    footer .question_block
+        text-align: center
+        margin-bottom: 15px
+        
+    footer .photo img
+        display: inline-block
+        margin-bottom: 15px
+        max-width: 150px
+        
+    .about .plus
+        display: none
+        
+    .about .centered img
+        display: inline-block
+        margin-bottom: 15px
+        max-width: 150px
+        
+    .cols .item
+        margin-bottom: 30px
+        
+    .reasons .item
+        width: 50%
+        
+    .reviews .items .item
+        margin-bottom: 30px
+        
+@media (max-width: $big-phones)
+    body
+        position: relative
+
+@media (max-width: $phones)
+    header .logo
+        text-align: center
+        
+        & img
+            max-width: 130px
+        
+        & .desc
+            text-align: left
+            margin: 10px 0 10px 10px
+            font-size: 10px
+            
+    .contacts
+        text-align: center
+        
+        & .socials
+            margin-top: 0
+            
+    .reasons .item
+        width: 100%
+        
+    .prices .item .text .item .label
+        width: 50%
+        font-size: 14px
+        
+    .prices .item .text .item .value
+        width: 50%
+        font-size: 14px
+            
+@media (max-width: $small-phones)
+    header .logo
+        text-align: center
+        
+        & img
+            max-width: 130px
+        
+        & .desc
+            text-align: center
+            margin: 10px 0
+            font-size: 10px
+            
+    .contacts
+        text-align: center
+        
+        & .socials
+            margin-top: 10px

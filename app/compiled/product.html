@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Template 2</title>
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="libs/slick/slick/slick.css">
+<link rel="stylesheet" href="libs/slick/slick/slick-theme.css">
+<link rel="stylesheet" href="sprites/sprite.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="background:url(img/neitralfon.jpg) no-repeat top center;" class="inner">
+    <div class="wrapper">
+        <div class="search-form-overlay"></div>
+<div class="search-form-popup">
+    <div class="search-form-popup-wrap">
+        <div class="content-wrapper">
+            <form action="#" class="search-form">
+                <button type="submit" class="fa fa-search search-icon" aria-hidden="true"></button>
+                <input id="title-search-input" class="search-input" type="text" name="q" value="" maxlength="50" autocomplete="off" placeholder="Поиск">
+                <i class="fa fa-times search-close" aria-hidden="true"></i>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- HEADER -->
+<header>
+    <div class="header-content">
+        <div class="header-inner">
+            <div class="header-top">
+                <div class="row inliner vam">
+                    <div class="col-md-8 col-sm-8 col-xs-6 top-left">
+                        <div class="inliner vam">
+                            <div class="address hidden-sm hidden-xs">
+                                <i class="fa fa-map-marker"></i>
+                                <span>г. Рыбинск, ул. Правды 10</span>
+                            </div>
+                            <div class="envelope hidden-xs">
+                                <i class="fa fa-envelope-o"></i>
+                                <a href="mailto:info@site.ru">info@site.ru</a>
+                            </div>
+                            <div class="socials hidden-xs">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="phones">
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:+71234567890">8 (800) 123-45-67</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 nopadding">
+                        <div class="top-sider inliner vam">
+                            <div class="search">
+                                <a href="#" class="searcher">
+                                    <i class="fa fa-search"></i>
+                                    <span class="hidden-xs">Поиск</span>
+                                </a>
+                            </div>
+                            <div class="search">
+                                <a href="#">
+                                    <i class="fa fa-sign-in"></i>
+                                    <span class="hidden-xs">Войти</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="row">
+                    <div class="flev inliner vam">
+                        <div class="col-lg-3 col-md-3 col-xs-12">
+                            <div class="logo">
+                                <a href="#">
+								<img src="img/logo-2.png" alt=""/> 
+							</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-xs-6 posst">
+                            <button class="navbar-toggler noactive hidden-lg hidden-md">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+                            <ul class="navbars hidden-sm hidden-xs">
+                                <li>
+                                    <a href="#">Каталог <i class="fa fa-angle-down"></i></a>
+                                    <div class="mega-menu">
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog1.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Автотехника</a>
+                                                <ul>
+                                                    <li><a href="#">Автозвук</a></li>
+                                                    <li><a href="#">Видеоригистраторы</a></li>
+                                                    <li><a href="#">Навигаторы</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog2.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Бытовая техника</a>
+                                                <ul>
+                                                    <li><a href="#">Духовые шкафы</a></li>
+                                                    <li><a href="#">Кофемашины</a></li>
+                                                    <li><a href="#">Микроволновые печи</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog3.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Косметика</a>
+                                                <ul>
+                                                    <li><a href="#">Для лица</a></li>
+                                                    <li><a href="#">Уход за волосами</a></li>
+                                                    <li><a href="#">Уход за ногтями</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog4.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Мебель</a>
+                                                <ul>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для гостинной</a></li>
+                                                    <li><a href="#">Для спальни</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog5.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Одежда</a>
+                                                <ul>
+                                                    <li><a href="#">Аксессуары</a></li>
+                                                    <li><a href="#">Детская одежда</a></li>
+                                                    <li><a href="#">Женская одежда</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog6.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Разработка сайтов</a>
+                                                <ul>
+                                                    <li><a href="#">Готовые сайты</a></li>
+                                                    <li><a href="#">Модули</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                    </div>
+                                </li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li class="posr">
+                                    <a href="#">Услуги <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Услуга 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Услуга 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Услуга 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Услуга 4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-6">
+                            <div class="cart">
+                                <a href="#" class="inliner vam">
+								<i class="fa fa-shopping-cart"><span>0</span></i>
+								<span>Нет товаров</span>
+							</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logorm">
+        <img width="108" src="img/logo2.png">
+    </div>
+</header>
+<div class="side-menu-overlay"></div>
+<div class="mobile-menu-content">
+    <a href="#" class="menu-close">&times;</a>
+    <ul class="navbars">
+        <li class="drop">
+            <a href="#">Каталог</a>
+            <div class="drop-menu">
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Автотехника</a>
+                    <ul>
+                        <li><a href="#">Автозвук</a></li>
+                        <li><a href="#">Видеоригистраторы</a></li>
+                        <li><a href="#">Навигаторы</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Бытовая техника</a>
+                    <ul>
+                        <li><a href="#">Духовые шкафы</a></li>
+                        <li><a href="#">Кофемашины</a></li>
+                        <li><a href="#">Микроволновые печи</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Косметика</a>
+                    <ul>
+                        <li><a href="#">Для лица</a></li>
+                        <li><a href="#">Уход за волосами</a></li>
+                        <li><a href="#">Уход за ногтями</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Мебель</a>
+                    <ul>
+                        <li><a href="#">Для ванной</a></li>
+                        <li><a href="#">Для гостинной</a></li>
+                        <li><a href="#">Для спальни</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Одежда</a>
+                    <ul>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li><a href="#">Детская одежда</a></li>
+                        <li><a href="#">Женская одежда</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Разработка сайтов</a>
+                    <ul>
+                        <li><a href="#">Готовые сайты</a></li>
+                        <li><a href="#">Модули</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+            </div>
+        </li>
+        <li><a href="#">Оплата</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Акции</a></li>
+        <li class="drop">
+            <a href="#">Услуги</a>
+            <div class="drop-menu">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Услуга 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуга 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуга 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуга 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</div>
+<!-- / HEADER -->
+        <!-- BREADCRUMBS -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Снегоходы</a></li>
+                    <li class="active">Снегоход БУРАН 4Т</li>
+                </ol>
+            </div>
+        </section>
+        <!-- / BREADCRUMBS -->
+        <!-- CONTENT -->
+        <section class="def-section content">
+            <div class="container">
+                <div class="product-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="gallery">
+                                <div class="big-gallery">
+                                    <div>
+                                        <a href="img/gal1.jpg" data-fancybox="gal">
+                                                    <img src="img/gal1.jpg" alt="">
+                                                </a>
+                                    </div>
+                                    <div>
+                                        <a href="img/gal2.jpg" data-fancybox="gal">
+                                                    <img src="img/gal2.jpg" alt="">
+                                                </a>
+                                    </div>
+                                </div>
+                                <div class="nav-gallery">
+                                    <div>
+                                        <span>
+                                                    <img src="img/gal1.jpg" alt="">
+                                                </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                                    <img src="img/gal2.jpg" alt="">
+                                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="product-content">
+                                <h1>Снегоход БУРАН 4Т</h1>
+                                <div class="product-rattings">
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star-half-o"></i></span>
+                                    <span><i class="fa fa-star-o"></i></span>
+                                </div>
+                                <div class="top">
+                                    <div class="price-wrap">
+
+                                        <p class="price">14 529 <i class="fa fa-ruble"></i></p>
+                                    </div>
+                                    <div class="availability">Наличие:
+                                        <span class="red">уточняйте</span>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus</p>
+                                <form method="post" class="product__form ms2_form">
+                                    <input type="hidden" name="id" value="10862">
+                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                    <input type="text" name="count" id="count" value="1">
+                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advanced mv30">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <div class="product-best">
+                                    <img src="img/bullets_rm_vector_551i_01.jpg">
+                                    <p>
+                                        модульное сиденье с подогревом рукояток пассажира
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="product-best">
+                                    <img src="img/bullets_rm_vector_551i_02.jpg">
+                                    <!--p class="product-best-fix">-</p-->
+                                    <p>
+                                        регулируемая задняя подвеска
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="product-best">
+                                    <img src="img/bullets_rm_vector_551i_03.jpg">
+                                    <p>
+                                        рычажная передняя подвеска
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="product-best">
+                                    <img src="img/bullets_rm_vector_551i_04.jpg">
+                                    <p>
+                                        светодиодная фара
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tabs -->
+                    <div class="mv30">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist" id="tabs">
+                            <li role="presentation" class="active"><a href="#desc" aria-controls="desc" role="tab" data-toggle="tab">Описание</a></li>
+                            <li role="presentation"><a href="#characters" aria-controls="characters" role="tab" data-toggle="tab">Характеристики</a></li>
+                            <li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Отзывы</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Доставка и оплата</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="desc">
+                                <p>
+                                    С 2014 года снегоходы «БУРАН 4Т» и «БУРАН 4ТД» получили новый двигатель – впрысковый мотор Kohler мощностью 29 л.с. пришел на смену 27-сильному карбюраторному. Благодаря переходу на впрыск эксплуатационный расход топлива снизился на 15%. Изменена система выпуска: модифицирован патрубок, крепление глушителя перенесено на раму снегохода. С 2015 года снегоходы «БУРАН 4Т» и «БУРАН 4ТД» поставляются с новым правым блоком руля, который состоит из удлинённого пластикового рычага газа с подогревом и нового тросика газа с нейлоновой вставкой, для легкого и плавного управления дроссельной заслонкой.
+                                </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="characters">
+                                <table class="char">
+                                    <tbody>
+                                        <tr>
+                                            <td>Габаритные размеры, мм</td>
+                                            <td>длина – 2700<br> ширина – 910 <br> высота со стеклом –1335</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Масса, кг</td>
+                                            <td>289</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Двигатель</td>
+                                            <td>4 тактный, 2 цил., KOHLER (США)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мощность, л.с.</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Объем двигателя, куб. см.</td>
+                                            <td>725</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Объем топливного бака, л</td>
+                                            <td>28</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Коробка передач</td>
+                                            <td>Двухступенчатая с реверсом</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Топливо</td>
+                                            <td>АИ-92</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Система смазки</td>
+                                            <td>раздельная</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Охлаждение</td>
+                                            <td>воздушное</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Электрозапуск</td>
+                                            <td>есть</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Максимальная скорость, км/ч</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Подвеска лыж</td>
+                                            <td>рессора</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Гусеница, мм</td>
+                                            <td>2 × (2878×380)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="reviews">
+                                <div class="messages">
+                                    <div class="alert alert-info">Отзывов пока нет. Напишите свой, чтобы стать первым!</div>
+                                </div>
+                                <h3 class="text-center">Написать отзыв</h3>
+                                <form method="post" class="contact-form ec-form" role="form" id="ec-form-resource-1762" data-fid="resource-1762" action="">
+                                    <input type="hidden" name="thread" value="resource-1762">
+                                    <div class="form-group ec-antispam hidden">
+                                        <label for="ec-address-resource-1762" class="control-label">Антиспам поле. Его необходимо скрыть через css</label>
+                                        <input type="text" name="address" class="form-control" id="ec-address-resource-1762" value="">
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="form-group">
+                                                <label>Ваше имя*</label>
+                                                <input type="text" name="user_name" class="form-control" id="ec-user_name-resource-1762" value="">
+                                                <span class="ec-error help-block" id="ec-user_name-error-resource-1762"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="form-group">
+                                                <label>Email*</label>
+                                                <input type="text" name="user_email" class="form-control" id="ec-user_email-resource-1762" value="">
+                                                <span class="ec-error help-block" id="ec-user_email-error-resource-1762"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.field-row -->
+
+                                    <div class="form-group star-row">
+                                        <label>Ваша оценка</label>
+                                        <input type="hidden" name="rating" id="ec-rating-resource-1762" value="">
+                                        <div class="ec-rating ec-clearfix" data-storage-id="ec-rating-resource-1762">
+                                            <div class="ec-rating-stars">
+                                                <span data-rating="1" data-description="Плохо"></span>
+                                                <span data-rating="2" data-description="Есть и получше"></span>
+                                                <span data-rating="3" data-description="Средне"></span>
+                                                <span data-rating="4" data-description="Хорошо"></span>
+                                                <span data-rating="5" data-description="Отлично! Рекомендую!"></span>
+                                            </div>
+                                            <div class="ec-rating-description">Пожалуйста, оцените по 5 бальной шкале</div>
+                                        </div>
+                                    </div>
+                                    <!-- /.field-row -->
+
+                                    <div class="form-group">
+                                        <label>Отзыв</label>
+                                        <textarea type="text" name="text" class="form-control" rows="5" id="ec-text-resource-1762"></textarea>
+                                        <span class="ec-error help-block" id="ec-text-error-resource-1762"></span>
+                                    </div>
+                                    <!-- /.field-row -->
+
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn btn-blue">Отправить</button>
+                                    </div>
+                                    <!-- /.buttons-holder -->
+                                </form>
+                                <!-- /.contact-form -->
+                                <div id="ec-form-success-resource-1762"></div>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="settings">
+                                <p>Доставка и оплата</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- / tabs -->
+                    <!-- RELATED -->
+                    <div class="related-products">
+                        <h2 class="text-center"><i class="icon icon-rm"></i> Похожие товары</h2>
+                        <div class="products">
+                            <div class="def-slider owl-carousel related-slider">
+                                <!-- item -->
+                                <div>
+                                    <div class="item eqh">
+                                        <div class="image">
+                                            <a href="#">
+                                        <img src="img/product1.jpg" alt="">
+                                    </a>
+                                            <div class="labels">
+                                                <span class="label-item green">BEST</span>
+                                                <span class="label-item blue">NEW</span>
+                                                <span class="label-item red">SALE</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#" class="title">Буран А</a>
+                                            <div class="prices">
+                                                <span class="price">
+                                            219 999 <i class="fa fa-ruble"></i>
+                                        </span>
+                                                <span class="oldprice">
+                                            259 999 <i class="fa fa-ruble"></i>
+                                        </span>
+                                            </div>
+                                            <button class="btn btn-primary">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div>
+                                    <div class="item eqh">
+                                        <div class="image">
+                                            <a href="#">
+                                        <img src="img/product2.png" alt="">
+                                    </a>
+                                            <div class="labels">
+                                                <span class="label-item red">SALE</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#" class="title">БУРАН ЛИДЕР АДЕ</a>
+                                            <div class="prices">
+                                                <span class="price">
+                                            279 999 <i class="fa fa-ruble"></i>
+                                        </span>
+                                                <span class="oldprice">
+                                            309 999 <i class="fa fa-ruble"></i>
+                                        </span>
+                                            </div>
+                                            <button class="btn btn-primary">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div>
+                                    <div class="item eqh">
+                                        <div class="image">
+                                            <a href="#">
+                                        <img src="img/product3.jpg" alt="">
+                                    </a>
+                                            <div class="labels">
+                                                <span class="label-item green">BEST</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#" class="title">СНЕГОХОД БУРАН 4Т</a>
+                                            <div class="prices">
+                                                <span class="price">
+                                            285 000 <i class="fa fa-ruble"></i>
+                                        </span>
+                                            </div>
+                                            <button class="btn btn-primary">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div>
+                                    <div class="item eqh">
+                                        <div class="image">
+                                            <a href="#">
+                                        <img src="img/product4.jpg" alt="">
+                                    </a>
+                                            <div class="labels">
+                                                <span class="label-item blue">NEW</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#" class="title">Буран 4ТД</a>
+                                            <div class="prices">
+                                                <span class="price">
+                                            305 000 <i class="fa fa-ruble"></i>
+                                        </span>
+                                            </div>
+                                            <button class="btn btn-primary">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div>
+                                    <div class="item eqh">
+                                        <div class="image">
+                                            <a href="#">
+                                        <img src="img/product1.jpg" alt="">
+                                    </a>
+                                            <div class="labels">
+                                                <span class="label-item green">BEST</span>
+                                                <span class="label-item blue">NEW</span>
+                                                <span class="label-item red">SALE</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#" class="title">Буран А</a>
+                                            <div class="prices">
+                                                <span class="price">
+                                            219 999 <i class="fa fa-ruble"></i>
+                                        </span>
+                                                <span class="oldprice">
+                                            259 999 <i class="fa fa-ruble"></i>
+                                        </span>
+                                            </div>
+                                            <button class="btn btn-primary">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div>
+                                    <div class="item eqh">
+                                        <div class="image">
+                                            <a href="#">
+                                        <img src="img/product2.png" alt="">
+                                    </a>
+                                            <div class="labels">
+                                                <span class="label-item red">SALE</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#" class="title">БУРАН ЛИДЕР АДЕ</a>
+                                            <div class="prices">
+                                                <span class="price">
+                                            279 999 <i class="fa fa-ruble"></i>
+                                        </span>
+                                                <span class="oldprice">
+                                            309 999 <i class="fa fa-ruble"></i>
+                                        </span>
+                                            </div>
+                                            <button class="btn btn-primary">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div>
+                                    <div class="item eqh">
+                                        <div class="image">
+                                            <a href="#">
+                                        <img src="img/product3.jpg" alt="">
+                                    </a>
+                                            <div class="labels">
+                                                <span class="label-item green">BEST</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#" class="title">СНЕГОХОД БУРАН 4Т</a>
+                                            <div class="prices">
+                                                <span class="price">
+                                            285 000 <i class="fa fa-ruble"></i>
+                                        </span>
+                                            </div>
+                                            <button class="btn btn-primary">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div>
+                                    <div class="item eqh">
+                                        <div class="image">
+                                            <a href="#">
+                                        <img src="img/product4.jpg" alt="">
+                                    </a>
+                                            <div class="labels">
+                                                <span class="label-item blue">NEW</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#" class="title">Буран 4ТД</a>
+                                            <div class="prices">
+                                                <span class="price">
+                                            305 000 <i class="fa fa-ruble"></i>
+                                        </span>
+                                            </div>
+                                            <button class="btn btn-primary">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / RELATED -->
+                </div>
+
+            </div>
+        </section>
+        <!-- / CONTENT -->
+        <!-- FOOTER -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="footer-block col-md-3 col-sm-6">
+				<div class="single_ftr">
+					<h4 class="sf_title">Контакты</h4>
+					<ul>
+						<li>617760, г. Пермь, ул. Ленина 86, офис 205</li>
+						<li>+7 (342) 123-45-67 <br> +7 (342) 123-45-67</li>
+						<li>info@yourcompany.com</li>
+					</ul>
+				</div>
+			</div>
+			<!--  End Col -->
+
+			<div class="footer-block col-md-3 col-sm-6">
+				<div class="single_ftr">
+					<h4 class="sf_title">Информация</h4>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--  End Col -->
+
+			<div class="footer-block col-md-3 col-sm-6">
+				<div class="single_ftr">
+					<h4 class="sf_title">Каталог</h4>
+					<ul>
+						<li><a href="#">Запчасти Буран</a></li>
+						<li><a href="#">Запчасти Тайга</a></li>
+						<li><a href="#">Запчасти Рысь</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--  End Col -->
+
+			<div class="footer-block col-md-3 col-sm-6">
+				<div class="single_ftr">
+					<h4 class="sf_title">Рассылка</h4>
+					<div class="newsletter_form">
+						<p>Подпишитесь на нашу рассылку</p>
+						<form method="post" class="form-inline">
+							<input name="EMAIL" id="email" placeholder="E-mail" class="form-control" type="email">
+							<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--  End Col -->
+
+		</div>
+
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row inliner vam">
+				<div class="col-sm-6">
+					<div class="ftr_social_icon">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-google"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<p>&copy; Все права защищены. ООО "Компания".</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- / FOOTER -->
+</div>
+<a id="scrollUp" href="#top"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
+<script src="libs/match-height/dist/jquery.matchHeight-min.js"></script>
+<script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="js/bootstrap-tabcollapse.js"></script>
+<script src="libs/slick/slick/slick.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.big-gallery').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.nav-gallery'
+            });
+            $('.nav-gallery').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '.big-gallery',
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true
+            });
+        });
+        var count = 1;
+        var countEl = document.getElementById("count");
+
+        function up() {
+            count++;
+            countEl.value = count;
+        }
+
+        function down() {
+            if (count > 1) {
+                count--;
+                countEl.value = count;
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Template 2</title>
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="libs/slick/slick/slick.css">
+<link rel="stylesheet" href="libs/slick/slick/slick-theme.css">
+<link rel="stylesheet" href="sprites/sprite.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="background:url(img/neitralfon.jpg) no-repeat top center;" class="inner">
+    <div class="wrapper">
+        <div class="search-form-overlay"></div>
+<div class="search-form-popup">
+    <div class="search-form-popup-wrap">
+        <div class="content-wrapper">
+            <form action="#" class="search-form">
+                <button type="submit" class="fa fa-search search-icon" aria-hidden="true"></button>
+                <input id="title-search-input" class="search-input" type="text" name="q" value="" maxlength="50" autocomplete="off" placeholder="Поиск">
+                <i class="fa fa-times search-close" aria-hidden="true"></i>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- HEADER -->
+<header>
+    <div class="header-content">
+        <div class="header-inner">
+            <div class="header-top">
+                <div class="row inliner vam">
+                    <div class="col-md-8 col-sm-8 col-xs-6 top-left">
+                        <div class="inliner vam">
+                            <div class="address hidden-sm hidden-xs">
+                                <i class="fa fa-map-marker"></i>
+                                <span>г. Рыбинск, ул. Правды 10</span>
+                            </div>
+                            <div class="envelope hidden-xs">
+                                <i class="fa fa-envelope-o"></i>
+                                <a href="mailto:info@site.ru">info@site.ru</a>
+                            </div>
+                            <div class="socials hidden-xs">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="phones">
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:+71234567890">8 (800) 123-45-67</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 nopadding">
+                        <div class="top-sider inliner vam">
+                            <div class="search">
+                                <a href="#" class="searcher">
+                                    <i class="fa fa-search"></i>
+                                    <span class="hidden-xs">Поиск</span>
+                                </a>
+                            </div>
+                            <div class="search">
+                                <a href="#">
+                                    <i class="fa fa-sign-in"></i>
+                                    <span class="hidden-xs">Войти</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="row">
+                    <div class="flev inliner vam">
+                        <div class="col-lg-3 col-md-3 col-xs-12">
+                            <div class="logo">
+                                <a href="#">
+								<img src="img/logo-2.png" alt=""/> 
+							</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-xs-6 posst">
+                            <button class="navbar-toggler noactive hidden-lg hidden-md">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+                            <ul class="navbars hidden-sm hidden-xs">
+                                <li>
+                                    <a href="#">Каталог <i class="fa fa-angle-down"></i></a>
+                                    <div class="mega-menu">
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog1.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Автотехника</a>
+                                                <ul>
+                                                    <li><a href="#">Автозвук</a></li>
+                                                    <li><a href="#">Видеоригистраторы</a></li>
+                                                    <li><a href="#">Навигаторы</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog2.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Бытовая техника</a>
+                                                <ul>
+                                                    <li><a href="#">Духовые шкафы</a></li>
+                                                    <li><a href="#">Кофемашины</a></li>
+                                                    <li><a href="#">Микроволновые печи</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog3.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Косметика</a>
+                                                <ul>
+                                                    <li><a href="#">Для лица</a></li>
+                                                    <li><a href="#">Уход за волосами</a></li>
+                                                    <li><a href="#">Уход за ногтями</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog4.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Мебель</a>
+                                                <ul>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для гостинной</a></li>
+                                                    <li><a href="#">Для спальни</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog5.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Одежда</a>
+                                                <ul>
+                                                    <li><a href="#">Аксессуары</a></li>
+                                                    <li><a href="#">Детская одежда</a></li>
+                                                    <li><a href="#">Женская одежда</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="megamenu-item">
+                                            <div class="mega-menu-img" style="background-image: url('img/catalog6.png')"></div>
+                                            <div class="menu">
+                                                <a href="#" class="title">Разработка сайтов</a>
+                                                <ul>
+                                                    <li><a href="#">Готовые сайты</a></li>
+                                                    <li><a href="#">Модули</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- / item -->
+                                    </div>
+                                </li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li class="posr">
+                                    <a href="#">Услуги <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Услуга 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Услуга 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Услуга 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Услуга 4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-6">
+                            <div class="cart">
+                                <a href="#" class="inliner vam">
+								<i class="fa fa-shopping-cart"><span>0</span></i>
+								<span>Нет товаров</span>
+							</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logorm">
+        <img width="108" src="img/logo2.png">
+    </div>
+</header>
+<div class="side-menu-overlay"></div>
+<div class="mobile-menu-content">
+    <a href="#" class="menu-close">&times;</a>
+    <ul class="navbars">
+        <li class="drop">
+            <a href="#">Каталог</a>
+            <div class="drop-menu">
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Автотехника</a>
+                    <ul>
+                        <li><a href="#">Автозвук</a></li>
+                        <li><a href="#">Видеоригистраторы</a></li>
+                        <li><a href="#">Навигаторы</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Бытовая техника</a>
+                    <ul>
+                        <li><a href="#">Духовые шкафы</a></li>
+                        <li><a href="#">Кофемашины</a></li>
+                        <li><a href="#">Микроволновые печи</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Косметика</a>
+                    <ul>
+                        <li><a href="#">Для лица</a></li>
+                        <li><a href="#">Уход за волосами</a></li>
+                        <li><a href="#">Уход за ногтями</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Мебель</a>
+                    <ul>
+                        <li><a href="#">Для ванной</a></li>
+                        <li><a href="#">Для гостинной</a></li>
+                        <li><a href="#">Для спальни</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Одежда</a>
+                    <ul>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li><a href="#">Детская одежда</a></li>
+                        <li><a href="#">Женская одежда</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+                <!-- item -->
+                <div class="menu">
+                    <a href="#" class="title">Разработка сайтов</a>
+                    <ul>
+                        <li><a href="#">Готовые сайты</a></li>
+                        <li><a href="#">Модули</a></li>
+                    </ul>
+                </div>
+                <!-- / item -->
+            </div>
+        </li>
+        <li><a href="#">Оплата</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Акции</a></li>
+        <li class="drop">
+            <a href="#">Услуги</a>
+            <div class="drop-menu">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Услуга 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуга 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуга 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуга 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</div>
+<!-- / HEADER -->
+        <!-- BREADCRUMBS -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li class="active">Запчасти</li>
+                </ol>
+            </div>
+        </section>
+        <!-- / BREADCRUMBS -->
+        <!-- CONTENT -->
+        <section class="def-section content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Запчасти</h1>
+                        <div class="text-center mv-30">
+                            <a href="img/kolenval.jpg" data-fancybox>
+                                <img src="img/kolenval.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="table-catalog">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-1">Поз.</th>
+                                            <th class="col-sm-1">Артикул</th>
+                                            <th class="col-sm-5">Наименование</th>
+                                            <th class="col-sm-2">Цена</th>
+                                            <th class="col-sm-3"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+                                            <td></td>
+                                            <td>119801980</td>
+                                            <td>Кольцо 110500105 в упаковке</td>
+                                            <td>226.86</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td></td>
+                                            <td>119800640-03</td>
+                                            <td>Вал коленчатый 110504240 в упаковке</td>
+                                            <td>15382.1</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td></td>
+                                            <td>119800400</td>
+                                            <td>Поршни 110501550, 110501560 в упаковке</td>
+                                            <td>3868.44</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td></td>
+                                            <td>119801980-01</td>
+                                            <td>Кольцо 110500105 (3 шт.) в упаковке</td>
+                                            <td>502.07</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td></td>
+                                            <td>119800490</td>
+                                            <td>Поршни 110501550-01, 110501560-01 в упаковке</td>
+                                            <td>1787.46</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td></td>
+                                            <td>119801210</td>
+                                            <td>Кольца стопорные 110500057 (10 шт) в упаковке</td>
+                                            <td>1390.82</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>1</td>
+                                            <td>110504240</td>
+                                            <td>Вал коленчатый</td>
+                                            <td>---</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>2</td>
+                                            <td>160500011</td>
+                                            <td>Втулка</td>
+                                            <td>656.94</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>3</td>
+                                            <td>78072</td>
+                                            <td>Манжета ТС 30х72х10 NBR 70 компания KOK</td>
+                                            <td>87.01</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>4</td>
+                                            <td>110500057</td>
+                                            <td>Кольцо стопорное</td>
+                                            <td>---</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>5</td>
+                                            <td>16119</td>
+                                            <td>Подшипник 6-50306К ГОСТ 2893-82 (6306N.Р6) *</td>
+                                            <td>373.43</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>6</td>
+                                            <td>110500105</td>
+                                            <td>Кольцо амортизационное</td>
+                                            <td>242.91</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>7</td>
+                                            <td>110500015</td>
+                                            <td>Шайба</td>
+                                            <td>33.23</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>7</td>
+                                            <td>110500015-01</td>
+                                            <td>Шайба</td>
+                                            <td>33.23</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>7</td>
+                                            <td>110500015-02</td>
+                                            <td>Шайба</td>
+                                            <td>33.23</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>8</td>
+                                            <td>107875</td>
+                                            <td>Подшипник K182222</td>
+                                            <td>334.22</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>9</td>
+                                            <td>110501560</td>
+                                            <td>Поршень левый</td>
+                                            <td>---</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>9</td>
+                                            <td>90110</td>
+                                            <td>Поршень левый 110501560-01</td>
+                                            <td>---</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>10</td>
+                                            <td>110501550</td>
+                                            <td>Поршень правый</td>
+                                            <td>---</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>10</td>
+                                            <td>90111</td>
+                                            <td>Поршень правый 110501550-01</td>
+                                            <td>---</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>11</td>
+                                            <td>110501119</td>
+                                            <td>Кольцо стопорное</td>
+                                            <td>24.56</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>12</td>
+                                            <td>18165</td>
+                                            <td>Палец поршневой EB 18/61 MAHLE KONIG Австрия</td>
+                                            <td>354.4</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>12</td>
+                                            <td>98917</td>
+                                            <td>Палец поршневой c.v. 18.64.0.12-0</td>
+                                            <td>288.01</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>13</td>
+                                            <td>83095</td>
+                                            <td>Кольцо поршневое 14-076-15-33 завод Бузулук ЧЕХИЯ</td>
+                                            <td>529.08</td>
+                                            <td class="nowrap">
+                                                <form method="post" class="product__form ms2_form inliner vam">
+                                                    <input type="hidden" name="id" value="10862">
+                                                    <button onclick="down()" type="button" class="btn  btn--count">-</button>
+                                                    <input type="text" name="count" id="count" value="1">
+                                                    <button onclick="up()" type="button" class="btn  btn--count">+</button>
+                                                    <button class="btn btn-primary" type="submit" name="ms2_action" value="cart/add">В корзину</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / CONTENT -->
+        <!-- FOOTER -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="footer-block col-md-3 col-sm-6">
+				<div class="single_ftr">
+					<h4 class="sf_title">Контакты</h4>
+					<ul>
+						<li>617760, г. Пермь, ул. Ленина 86, офис 205</li>
+						<li>+7 (342) 123-45-67 <br> +7 (342) 123-45-67</li>
+						<li>info@yourcompany.com</li>
+					</ul>
+				</div>
+			</div>
+			<!--  End Col -->
+
+			<div class="footer-block col-md-3 col-sm-6">
+				<div class="single_ftr">
+					<h4 class="sf_title">Информация</h4>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--  End Col -->
+
+			<div class="footer-block col-md-3 col-sm-6">
+				<div class="single_ftr">
+					<h4 class="sf_title">Каталог</h4>
+					<ul>
+						<li><a href="#">Запчасти Буран</a></li>
+						<li><a href="#">Запчасти Тайга</a></li>
+						<li><a href="#">Запчасти Рысь</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--  End Col -->
+
+			<div class="footer-block col-md-3 col-sm-6">
+				<div class="single_ftr">
+					<h4 class="sf_title">Рассылка</h4>
+					<div class="newsletter_form">
+						<p>Подпишитесь на нашу рассылку</p>
+						<form method="post" class="form-inline">
+							<input name="EMAIL" id="email" placeholder="E-mail" class="form-control" type="email">
+							<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--  End Col -->
+
+		</div>
+
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row inliner vam">
+				<div class="col-sm-6">
+					<div class="ftr_social_icon">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-google"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<p>&copy; Все права защищены. ООО "Компания".</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- / FOOTER -->
+</div>
+<a id="scrollUp" href="#top"><i class="fa fa-angle-up"></i></a>
+	</div>
+    <!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
+<script src="libs/match-height/dist/jquery.matchHeight-min.js"></script>
+<script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="js/bootstrap-tabcollapse.js"></script>
+<script src="libs/slick/slick/slick.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
